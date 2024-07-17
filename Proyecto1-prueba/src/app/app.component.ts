@@ -9,5 +9,17 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Proyecto1-prueba';
+  nombre = 'Francisco Deza';
+  edad = 29;
+  email = 'fdeza@gmail.com';
+  sueldos = [2000, 3000, 5000];
+  activo = true;
+
+  esActivo(){
+    return this.activo ? 'Trabajador Activo' : 'Trabajador Inactivo';
+  }
+
+  ultimos3Sueldos(){
+    return this.sueldos.reduce((a, v) => (a += v, a), 0);    
+  }
 }
