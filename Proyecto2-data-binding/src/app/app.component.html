@@ -9,6 +9,16 @@
       <th>Seleccionar</th>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      @for (e of articulos; track articulos) {}
+        <td>{{e.codigo}}</td>
+        <td>{{e.descripcion}}</td>
+        <td>{{e.precio}}</td>
+        <td><button>Borrar</button></td>
+        <td><button>Seleccionar</button></td>
+    </tr>
+  </tbody>
 </table>
 <br>
 <div>
