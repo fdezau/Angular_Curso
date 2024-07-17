@@ -11,6 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   nombre = 'Francisco Deza';
+  apellido = ''; 
   edad = 16;
   email = 'fdeza@gmail.com';
   sueldos = [2000, 3000, 5000];

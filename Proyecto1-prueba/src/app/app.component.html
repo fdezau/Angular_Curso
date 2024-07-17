@@ -31,8 +31,22 @@
 <br>
 <hr>
 <h3>7 - Directiva NgModel</h3>
-Data binding unidirección (modelo a vista)
+Data binding unidireccional (modelo a vista)
 <input type="text" [ngModel]="nombre">
 <br>
 Data binding bireccional (modelo-vista)
 <input type="text" [(ngModel)]="nombre">
+<br>
+<br>
+<h4>Lectura y Escritura de Datos</h4>
+<div>
+  <p>
+    Ingrese nombre: <input type="text" [(ngModel)] ="nombre">
+  </p>
+  <p>
+    Ingrese apellido: <input type="text" [(ngModel)] ="apellido">
+  </p>
+  <p>
+    Nombre Completo: {{nombre}}, {{apellido}}
+  </p>
+</div>
