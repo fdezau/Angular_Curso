@@ -10,5 +10,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Proyecto2-data-binding';
+  artículos = [];
+  codigo = 0;
+  descripcion = '';
+  precio = 0;
+
+  agregar(){
+    if (this.codigo || this.descripcion || this.precio){
+      alert('Todos los campos son obligatorios');
+        return;
+    }
+  }
 }
