@@ -14,6 +14,7 @@ export class AppComponent {
   email = 'fdeza@gmail.com';
   sueldos = [2000, 3000, 5000];
   activo = true;
+  contador = 1;
 
   esActivo(){
     return this.activo ? 'Trabajador Activo' : 'Trabajador Inactivo';
@@ -21,5 +22,13 @@ export class AppComponent {
 
   ultimos3Sueldos(){
     return this.sueldos.reduce((a, v) => (a += v, a), 0);    
+  }
+
+  incrementar(){
+    ++this.contador;
+  }
+
+  decrementar(){
+    --this.contador;
   }
 }
