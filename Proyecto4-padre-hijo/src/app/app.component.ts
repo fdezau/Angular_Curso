@@ -13,7 +13,7 @@ export class AppComponent {
   valor1: number;
   valor2: number;
   valor3: number;
-  resultado: string;
+  resultado: string = '';
 
   constructor(){
     this.valor1 = this.generarAleatorio();
